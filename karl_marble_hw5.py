@@ -5,7 +5,11 @@ def valid(pin):
     """
     Takes a 4 digit input and checks it against a valid code.
     """
-    pass
+    #1) Check the length
+    #2) Check the type
+    #3) Check against the code
+    len(valid) = strLength()
+    
 
 
 def main():
