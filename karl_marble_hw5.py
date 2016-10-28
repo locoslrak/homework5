@@ -9,20 +9,24 @@ def valid():
     Returns:
         None
     """
+    #0) Loop three times through the following steps)
     #1) Take the Pin Input
     #2) Check the length
     #2) Check the type
     #3) Check against the code
-    pin = input("Enter your PIN:")
-    strLength = len(pin)
-    if strLength > 4:
-        print("Invalid PIN length. Correct format is <9876>")
-    try:
-        pinVal = int(pin)
-    except ValueError:
-        print("Invalid Pin Character. Correct format is <9876>")
-    if pin == "1234":
-        print("Your PIN is correct.")
+    for i in range(3):
+        pin = input("Enter your PIN:")
+        strLength = len(pin)
+        if strLength > 4:
+            print("Invalid PIN length. Correct format is <9876>")
+        try:
+            pinVal = int(pin)
+        except ValueError:
+            print("Invalid Pin Character. Correct format is <9876>")
+        if pin == "1234":
+            print("Your PIN is correct.")
+            return
+    print("Your bank card is blocked.")
 
 
 def main():
