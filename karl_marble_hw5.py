@@ -27,15 +27,17 @@ def valid():
             print("Your PIN is correct.")
             return
     print("Your bank card is blocked.")
+    exit (1)
 
 
 def main():
     """
     Test Function
     """
-    pass
+    valid()
 
 if __name__ == '__main__':
-    
+    #call main
+    main() 
 
     exit(0)
